@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar imagem</title>
+</head>
+<body>
+    <h1>Trocar imagem</h1>
+
+    <img 
+        id="logo" 
+        src="imagens/logoFatec.png" 
+        alt="Logotipo da Fatec Praia Grande" 
+        title="Logotipo da Fatec Praia Grande"
+        onmouseover="trocarImagem()">
+    
+    <script>
+        function trocarImagem(){
+            var imgLogo = document.all['logo'];
+            if (imgLogo.alt == "Logotipo da Fatec Praia Grande") {
+                imgLogo.src = "imagens/logoGoverno.png";
+                imgLogo.alt = "Logotipo do Governo do Estados de São Paulo";
+                imgLogo.title = imgLogo.alt;
+            } else {
+                imgLogo.src = "imagens/logoFatec.png";
+                imgLogo.alt = "Logotipo da Fatec Praia Grande";
+                imgLogo.title = imgLogo.alt;
+            }
+        }
+    </script>
+</body>
+</html>

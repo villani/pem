@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtendo elementos HTML</title>
+</head>
+<body>
+    <h1>Obtendo elementos HTML</h1>
+    <img id="logo" src="imagens/logoFatec.png" alt="Logotipo da Fatec Praia Grande">
+    <p id="saida"></p>
+    <script>
+        var pSaida = document.all['saida'];
+        var imgLogo = document.all['logo'];
+        var saida = "<h2>Dados da Imagem:</h2>"
+        saida += "<strong>Imagem:</strong> " + imgLogo.src + "<br>";
+        saida += "<strong>Descrição:</strong> " + imgLogo.alt + "<br>";
+        pSaida.innerHTML = saida
+    </script>
+</body>
+</html>

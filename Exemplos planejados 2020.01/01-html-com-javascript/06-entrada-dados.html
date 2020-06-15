@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de dados</title>
+</head>
+<body>
+    <h1>Entrada de dados</h1>
+    <p>
+        <label for="compra">Total da compra</label>: <br>
+        R$ <input type="text" name="compra" id="compra">
+    </p>
+    <p>
+        <label for="cliente">Entregue pelo cliente</label>: <br>
+        R$ <input type="text" name="cliente" id="cliente">
+        <button onclick="calcularTroco()">Calcular</button>
+    </p>
+    <p>
+        <label for="troco">Troco</label>: <br>
+        R$ <input type="text" name="troco" id="troco" readonly>
+    </p>
+    <script>
+        function calcularTroco() {
+            var inputCompra = document.all['compra'];
+            var compra = Number(inputCompra.value);
+            var inputCliente = document.all['cliente'];
+            var cliente = Number(inputCliente.value);
+            var inputTroco = document.all['troco'];
+            inputTroco.value = (cliente - compra).toFixed(2);
+        }
+    </script>
+</body>
+</html>
