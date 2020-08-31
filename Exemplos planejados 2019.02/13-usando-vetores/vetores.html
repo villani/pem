@@ -1,0 +1,25 @@
+<script>
+
+var vetor = [];
+var vetor2 = [0, 1, 1, 2, 3, 5, 8, 13];
+document.write('Opção 1: ' + vetor2.toString());
+document.write('<br>');
+document.write('Opção 2: ' + vetor2.join(' - '));
+document.write('Posição 4: ' + vetor2[4]);
+
+// INSERE VALOR NO INÍCIO DO VETOR
+vetor2.unshift(-1);
+
+// INSERE VALOR NO FINAL DO VETOR
+vetor2.push(21);
+document.write('<p>Opção 2: ' + vetor2.join(' - ') 
+            + '</p>');
+
+var removido = vetor2.pop(); // remove do final
+document.write('<p>' + removido + ' foi removido ' 
+            + 'do vetor.</p>');
+            
+var removido2 = vetor2.shift(); // remove do início
+document.write('<p>' + removido2 + ' foi removido ' 
+            + 'do vetor.</p>');
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Design Responsivo</title>
+	<style>
+		@media screen {
+			.celular {
+				width: 100%;
+				position: fixed;
+				top: 0;
+				padding: 10px;
+				background-color: blue;
+				color: white;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+		@media print {
+			.celular {
+				width: 100%;
+				position: fixed;
+				top: 0;
+				padding: 10px;
+				background-color: red;
+				color: white;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Design Responsivo</h1>
+	<div class="celular">Menu</div>
+	<div class="desktop">
+		<ul>
+			<li>Início</li>
+			<li>Sobre</li>
+			<li>Serviços</li>
+			<li>Contato</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Navegabilidade do formulário</title>
+    </head>
+    <body>
+        <h1>Navegabilidade do formulário</h1>
+        <form action="" method="get">
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" tabindex="1">
+            </p>
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" tabindex="2">
+            </p>
+            <p>
+                <label for="tipo">Tipo:</label><br>
+                <input type="radio" name="tipo" tabindex="3" value="1"> Aluno <br>
+                <input type="radio" name="tipo" tabindex="4" value="2"> Professor <br>
+            </p>
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagem" tabindex="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="enviar" value="Enviar mensagem">
+            </p>
+        </form>
+        </body></html>

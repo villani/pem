@@ -1,0 +1,14 @@
+/* Estilos para elemento identificados (id) */
+#importante {
+    font-weight: bold;
+    color: red;
+}
+#terceiro {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;            
+}
+
+/* Estilo para TAGs */
+body {
+    background-color: aqua;
+}
